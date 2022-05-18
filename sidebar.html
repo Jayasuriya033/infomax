@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOMAX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+    <link href="sidestyle.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="content">
+            <div class="logo">
+              <i class="fa-solid fa-user-graduate"></i>
+                <div class="name">Infomax</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav">
+            <li>
+                <a href="#"><i class='bx bx-search bx-sm'></i>
+                <input type="text" placeholder="Search">
+              <span class="tooltip">Search</span></a>
+            </li>
+            <!-- <li>
+                <a href="#"><i class='bx bx-grid-alt bx-sm'></i>
+                <span class="links-name">Dashboard</span></a>
+              <span class="tooltip">Dashboard</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-user bx-sm'></i>
+                <span class="links-name">User</span></a>
+              <span class="tooltip">User</span></a>
+            </li> -->
+            <li>
+                <a href="#"><i class='bx bxs-edit bx-sm'></i>
+                <span class="links-name">Update</span></a>
+              <span class="tooltip">Update</span></a>
+            </li>
+            <li>
+                <!-- <a href="#"><i class='bx bx-folder bx-sm'></i> -->
+                  <a href="#"><i class='bx bx-list-plus bx-sm'></i>
+                <span class="links-name">Insert</span></a>
+              <span class="tooltip">Insert</span></a>
+            </li>
+            <li>
+                <!-- <a href="#"><i class='bx bx-stats bx-sm'></i> -->
+                  <a href="#"><i class="fa-regular fa-trash-can fa-lg"></i>
+                <span class="links-name">Delete</span></a>
+              <span class="tooltip">Delete</span></a>
+            </li>
+            <!-- <li>
+                <a href="#"><i class='bx bx-cart bx-sm bx-fade-right-hover'></i>
+                <span class="links-name">Order</span></a>
+              <span class="tooltip">Order</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-heart bx-sm bx-burst-hover'></i>
+                <span class="links-name">Saved</span></a>
+              <span class="tooltip">Saved</span></a>
+            </li> -->
+            <li>
+                <a href="#"><i class='bx bx-log-out bx-sm'></i>
+                <span class="links-name">Logout</span></a>
+              <span class="tooltip">Logout</span></a>
+            </li>
+        </ul>
+        <!-- <div class="profile-content">
+            <div class="profile">
+                <div class="details">
+                    <img src="batman.jpg" alt="">
+                    <div class="info">
+                        <div class="name">Jagadeesh</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log"></i>
+            </div>
+        </div> -->
+    </div>
+    <div class="home-content">
+        <div class="text"><h1>WELCOME..!!</div>
+    </div>
+
+    <script>
+        let btn=document.querySelector("#btn");
+        let sidebar=document.querySelector(".sidebar");
+        let searchbtn=document.querySelector(".bx-search");
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+       searchbtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
